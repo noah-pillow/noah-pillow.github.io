@@ -2,6 +2,6 @@ body {
   background-color: rgba(16, 128, 255, 0.2);
 }
 
-nav > .nav-logo {
+nav .nav-logo {
   height: 10vh;
 }
