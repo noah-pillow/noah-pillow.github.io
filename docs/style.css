@@ -1,7 +1,39 @@
 body {
   background-color: rgba(16, 128, 255, 0.2);
+  margin: 0 auto;
+  font-family: 'Segoe UI';
 }
 
-nav {
+nav .nav-logo {
+  float: left;
   height: 10vh;
+  padding: 1rem;
+}
+
+nav ul {
+  display: inline-block; /* Allow nav list to display to the right of the logo */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul > li {
+  display: inline-block; /* Allow nav list items to display side-by-side */
+}
+
+nav ul > li > a {
+  display: inline-block;
+  background-color: white;
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  height: 10vh;
+  line-height: 10vh;
+}
+
+/*
+ * All links get underline decoration by default, even if their only content is an image.
+ * This rule removes that unwanted underlining for the nav logo.
+ */
+nav .nav-logo-link {
+  text-decoration: none;
 }
