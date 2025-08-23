@@ -13,6 +13,10 @@ body {
   font-family: 'Segoe UI';
 }
 
+main {
+  margin: 0 1rem;
+}
+
 nav {
   background-color: var(--bg-color-med-theme);
   color: var(--font-color-med-theme);
