@@ -1,7 +1,21 @@
+:root {
+  --bg-color-light-theme: rgb(170, 210, 255);
+  --font-color-light-theme: rgb(35, 65, 90);
+  --bg-color-dark-theme: rgb(35, 65, 90);
+  --font-color-dark-theme: white;
+  --bg-color-med-theme: steelblue;
+  --font-color-med-theme: white;
+}
+
 body {
-  background-color: rgba(16, 128, 255, 0.2);
+  background-color: var(--bg-color-light-theme);
   margin: 0 auto;
   font-family: 'Segoe UI';
+}
+
+nav {
+  background-color: var(--bg-color-med-theme);
+  color: var(--font-color-med-theme);
 }
 
 nav .nav-logo {
@@ -10,10 +24,15 @@ nav .nav-logo {
   padding: 1rem;
 }
 
+nav .nav-logo:hover {
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
 nav ul {
-  display: inline-block; /* Allow nav list to display to the right of the logo */
+  display: flex; /* Allow nav list to display to the right of the logo */
   margin: 0;
   padding: 0;
+  justify-content: space-evenly;
 }
 
 nav ul > li {
@@ -22,12 +41,18 @@ nav ul > li {
 
 nav ul > li > a {
   display: inline-block;
-  background-color: white;
   color: inherit;
+  font-weight: bold;
   text-decoration: none;
   padding: 1rem 2rem;
   height: 10vh;
   line-height: 10vh;
+  transition: 0.2s;
+}
+
+nav ul > li > a:hover {
+  background-color: var(--font-color-med-theme);
+  color: var(--bg-color-med-theme);
 }
 
 /*
