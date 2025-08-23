@@ -66,3 +66,17 @@ nav ul > li > a:hover {
 nav .nav-logo-link {
   text-decoration: none;
 }
+
+.embeded-resume {
+  width: 100%;
+  height: calc(90vh - 2rem); /* Nav height is 10vh, nav vertical padding is 1rem each */
+}
+
+.no-margin-no-padding {
+  margin: 0;
+  padding: 0;
+}
+
+.hide-overflow {
+  overflow: hidden;
+}
